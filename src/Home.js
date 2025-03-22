@@ -8,19 +8,25 @@ const Home = () => {
         { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
     ]);
 
+    const [name, setName] = useState('mario');
+
     const handleDelete = (id) => {
         const newBlogs = blogs.filter(blog => blog.id !== id);
         setBlogs(newBlogs);
     }
 
     useEffect(() => {
-        console.log('use effect run')
-        console.log(blogs);
-    });
+        console.log('use effect run');
+        console.log(name);
+    }, [name]);
+
     return ( 
         <div className="home">
             <BlockList blogs={blogs} title="All Blogs!" handleDelete={handleDelete}/>
+            <button onClick={() => setName('luigi')}>change name</button>
+            <p>{ name }</p>
         </div>
      );
 }
+
 export default Home;
