@@ -2,13 +2,13 @@
     "blogs": [
         {
             "title": "My First Blog",
-            "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted",
+            "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
             "author": "johnnysky",
             "id": 1
         },
         {
             "title": "Open Party!",
-            "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted",
+            "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
             "author": "sky",
             "id": 2
         }
